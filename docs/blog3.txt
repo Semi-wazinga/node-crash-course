@@ -1,0 +1,383 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node .\global.js
+in the timeout
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node global
+<ref *1> Object [global] {
+  global: [Circular *1],  
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  performance: Performance {
+    nodeTiming: PerformanceNodeTiming {
+      name: 'node',
+      entryType: 'node',
+      startTime: 0,
+      duration: 53.11119997501373,
+      nodeStart: 0.7716000080108643,
+      v8Start: 3.55840003490448,
+      bootstrapComplete: 37.4679000377655,
+      environment: 16.457300066947937,
+      loopStart: -1,
+      loopExit: -1,
+      idleTime: 0
+    timeOrigin: 1662545367022.873
+  },
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  }
+}
+in the timeout
+C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:8
+    console('done');
+    ^
+
+TypeError: console is not a function
+    at Timeout._onTimeout (C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:8:5)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:8
+    console('done');
+    ^
+
+TypeError: console is not a function
+    at Timeout._onTimeout (C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:8:5)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node global
+done
+done
+in the timeout
+done
+done
+done
+done
+done
+done
+done
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node global
+done
+done
+in the timeout
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node global
+C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:13
+console(__dirname);
+^
+TypeError: console is not a function
+    at Object.<anonymous> (C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js:13:1)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node global
+C:\Users\HP PC\Desktop\tuts\node-crash-course
+C:\Users\HP PC\Desktop\tuts\node-crash-course\global.js
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node people
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+nodu : The term 'nodu' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the    
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ nodu .\modules.js
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (nodu:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node .\modules.js
+C:\Users\HP PC\Desktop\tuts\node-crash-course\modules.js:1
+confirm xyz = require('./people');
+        ^^^
+
+    at Object.compileFunction (node:vm:360:18)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node modules
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+{}
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node modules
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+hello
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+{
+  people: [ 'yoshi', 'ryu', 'chun-li', 'mario' ],
+  ages: [ 20, 25, 30, 35 ]
+}
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node modules
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ]
+[ 'yoshi', 'ryu', 'chun-li', 'mario' ] [ 20, 25, 30, 35 ]
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node modules
+{
+  arch: [Function: arch] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  cpus: [Function: cpus],
+  endianness: [Function: endianness] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  freemem: [Function: getFreeMem] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  getPriority: [Function: getPriority],
+  homedir: [Function: __node_internal_checkError] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  hostname: [Function: __node_internal_checkError] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  loadavg: [Function: loadavg],
+  networkInterfaces: [Function: networkInterfaces],
+  platform: [Function: platform] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  release: [Function: getOSRelease] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  setPriority: [Function: setPriority],
+  tmpdir: [Function: tmpdir] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  totalmem: [Function: getTotalMem] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  type: [Function: getOSType] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  userInfo: [Function: userInfo],
+  uptime: [Function: getUptime] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  version: [Function: getOSVersion] {
+    [Symbol(Symbol.toPrimitive)]: [Function (anonymous)]
+  },
+  constants: [Object: null prototype] {
+    UV_UDP_REUSEADDR: 4,
+    dlopen: [Object: null prototype] {},
+    errno: [Object: null prototype] {
+      E2BIG: 7,
+      EACCES: 13,
+      EADDRINUSE: 100,
+      EADDRNOTAVAIL: 101,
+      EAFNOSUPPORT: 102,
+      EAGAIN: 11,
+      EALREADY: 103,
+      EBADF: 9,
+      EBADMSG: 104,
+      EBUSY: 16,
+      ECANCELED: 105,
+      ECHILD: 10,
+      ECONNABORTED: 106,
+      ECONNREFUSED: 107,
+      ECONNRESET: 108,
+      EDEADLK: 36,
+      EDESTADDRREQ: 109,
+      EDOM: 33,
+      EEXIST: 17,
+      EFAULT: 14,
+      EFBIG: 27,
+      EHOSTUNREACH: 110,
+      EIDRM: 111,
+      EILSEQ: 42,
+      EINPROGRESS: 112,
+      EINTR: 4,
+      EINVAL: 22,
+      EIO: 5,
+      EISCONN: 113,
+      EISDIR: 21,
+      ELOOP: 114,
+      EMFILE: 24,
+      EMLINK: 31,
+      EMSGSIZE: 115,
+      ENAMETOOLONG: 38,
+      ENETDOWN: 116,
+      ENETRESET: 117,
+      ENETUNREACH: 118,
+      ENFILE: 23,
+      ENOBUFS: 119,
+      ENODATA: 120,
+      ENODEV: 19,
+      ENOENT: 2,
+      ENOEXEC: 8,
+      ENOLCK: 39,
+      ENOLINK: 121,
+      ENOMEM: 12,
+      ENOMSG: 122,
+      ENOPROTOOPT: 123,
+      ENOSPC: 28,
+      ENOSR: 124,
+      ENOSTR: 125,
+      ENOSYS: 40,
+      ENOTCONN: 126,
+      ENOTDIR: 20,
+      ENOTEMPTY: 41,
+      ENOTSOCK: 128,
+      ENOTSUP: 129,
+      ENOTTY: 25,
+      ENXIO: 6,
+      EOPNOTSUPP: 130,
+      EOVERFLOW: 132,
+      EPERM: 1,
+      EPIPE: 32,
+      EPROTO: 134,
+      EPROTONOSUPPORT: 135,
+      EPROTOTYPE: 136,
+      ERANGE: 34,
+      EROFS: 30,
+      ESPIPE: 29,
+      ESRCH: 3,
+      ETIME: 137,
+      ETIMEDOUT: 138,
+      ETXTBSY: 139,
+      EWOULDBLOCK: 140,
+      EXDEV: 18,
+      WSAEINTR: 10004,
+      WSAEBADF: 10009,
+      WSAEACCES: 10013,
+      WSAEFAULT: 10014,
+      WSAEINVAL: 10022,
+      WSAEMFILE: 10024,
+      WSAEWOULDBLOCK: 10035,
+      WSAEINPROGRESS: 10036,
+      WSAEALREADY: 10037,
+      WSAENOTSOCK: 10038,
+      WSAEDESTADDRREQ: 10039,
+      WSAEMSGSIZE: 10040,
+      WSAEPROTOTYPE: 10041,
+      WSAENOPROTOOPT: 10042,
+      WSAEPROTONOSUPPORT: 10043,
+      WSAESOCKTNOSUPPORT: 10044,
+      WSAEOPNOTSUPP: 10045,
+      WSAEPFNOSUPPORT: 10046,
+      WSAEAFNOSUPPORT: 10047,
+      WSAEADDRINUSE: 10048,
+      WSAEADDRNOTAVAIL: 10049,
+      WSAENETDOWN: 10050,
+      WSAENETUNREACH: 10051,
+      WSAENETRESET: 10052,
+      WSAECONNABORTED: 10053,
+      WSAECONNRESET: 10054,
+      WSAENOBUFS: 10055,
+      WSAEISCONN: 10056,
+      WSAENOTCONN: 10057,
+      WSAESHUTDOWN: 10058,
+      WSAETOOMANYREFS: 10059,
+      WSAETIMEDOUT: 10060,
+      WSAECONNREFUSED: 10061,
+      WSAELOOP: 10062,
+      WSAENAMETOOLONG: 10063,
+      WSAEHOSTDOWN: 10064,
+      WSAEHOSTUNREACH: 10065,
+      WSAENOTEMPTY: 10066,
+      WSAEPROCLIM: 10067,
+      WSAEUSERS: 10068,
+      WSAEDQUOT: 10069,
+      WSAESTALE: 10070,
+      WSAEREMOTE: 10071,
+      WSASYSNOTREADY: 10091,
+      WSAVERNOTSUPPORTED: 10092,
+      WSANOTINITIALISED: 10093,
+      WSAEDISCON: 10101,
+      WSAENOMORE: 10102,
+      WSAECANCELLED: 10103,
+      WSAEINVALIDPROCTABLE: 10104,
+      WSAEINVALIDPROVIDER: 10105,
+      WSAEPROVIDERFAILEDINIT: 10106,
+      WSASYSCALLFAILURE: 10107,
+      WSASERVICE_NOT_FOUND: 10108,
+      WSATYPE_NOT_FOUND: 10109,
+      WSA_E_NO_MORE: 10110,
+      WSA_E_CANCELLED: 10111,
+      WSAEREFUSED: 10112
+    },
+    signals: [Object: null prototype] {
+      SIGHUP: 1,
+      SIGINT: 2,
+      SIGILL: 4,
+      SIGABRT: 22,
+      SIGFPE: 8,
+      SIGKILL: 9,
+      SIGSEGV: 11,
+      SIGTERM: 15,
+      SIGBREAK: 21,
+      SIGWINCH: 28
+    },
+    priority: [Object: null prototype] {
+      PRIORITY_LOW: 19,
+      PRIORITY_BELOW_NORMAL: 10,
+      PRIORITY_ABOVE_NORMAL: -7,
+      PRIORITY_HIGHEST: -20
+    }
+  },
+  EOL: '\r\n',
+  devNull: '\\\\.\\nul'
+}
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node modules
+win32 C:\Users\HP PC
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node files
+node:internal/modules/cjs/loader:959
+  throw err;
+  ^
+    at Function.Module._load (node:internal/modules/cjs/loader:804:27)
+    at node:internal/main/run_main_module:17:47 {
+  requireStack: []
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course>
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file 
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+[Function: toString]
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+hello, ninja
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+file was written
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+[Error: EEXIST: file already exists, mkdir 'C:\Users\HP PC\Desktop\tuts\node-crash-course\assets'] {
+  code: 'EEXIST',
+  path: 'C:\\Users\\HP PC\\Desktop\\tuts\\node-crash-course\\assets'
+folder created
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+folder deleted
+folder created
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+folder deleted
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+folder created
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> node file
+folder deleted
+file deleted
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> ls
+
+
+    Directory: C:\Users\HP PC\Desktop\tuts\node-crash-course
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          9/7/2022  11:16 AM            271 global.js
+-a----          9/7/2022  11:52 AM            141 modules.js
+-a----          9/7/2022  11:45 AM            154 people.js
+-a----          9/7/2022  12:27 PM             25 streams.js
+
+
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> cd .\docs\
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course\docs> echo > blog2.txt
+cmdlet Write-Output at command pipeline position 1
+Supply values for the following parameters:
+InputObject[0]:
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course\docs> echo > blog3.txt
+
+cmdlet Write-Output at command pipeline position 1
+Supply values for the following parameters:
+InputObject[0]:
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course\docs> cd ..
+PS C:\Users\HP PC\Desktop\tuts\node-crash-course> 
